@@ -3,7 +3,7 @@ import React from "react";
 const ContactList = (props) => {
     console.log(props);
 
-    const renderContactList = props.contact.map((contact) => {
+    const renderContactList = props.contact.map((contacts) => {
         return(
             <div className="item">
                 <div className="content">

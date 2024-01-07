@@ -1,29 +1,28 @@
 import React from "react";
 import "./App.css";
-// import Header from "./Header.jsx";
-// import AddContact from "./AddContact.jsx"
-// import ContactList from "./ContactList.jsx"
+import Header from "./Header";
+import AddContact from "./AddContact";
+import ContactList from "./ContactList";
 
 function App() {
-    // const contacts = [
-    //   {
-    //     id:"1",
-    //     name:"Yash",
-    //     email:"syash0582@gmail.com",
-    //   },
-    //   {
-    //     id: "2",
-    //     name:"aashu",
-    //     email:"aashu2@gmail.com",
-    //   }
-    // ];
+    const contacts = [
+        {
+         id:"1",
+         name:"Yash",
+         email:"syash0582@gmail.com",
+       },
+       {
+         id: "2",
+         name:"aashu",
+         email:"aashu2@gmail.com",
+       }
+     ];
     return (
      <div className="ui container">
-      <h1>hello</h1>
-      {/* <Header />
-      <AddContact />
-      <ContactList contacts={contacts}  /> */}
+        <Header />
+        <AddContact />
+        <ContactList contacts={contacts}/>
      </div>)
 }
 
-export default App
+export default App;
